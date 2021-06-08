@@ -17,10 +17,11 @@ public class Unit4Task3 {
             System.out.println();
         }
         for (int i = 0; i < n - 1; i++) {
-            if (arr[i][i + 1] % 2 == 0) {
-                sumEven += arr[i][i + 1];
+            int element = arr[i][n-i-2];
+            if (element % 2 == 0) {
+                sumEven += element;
             }
         }
-        System.out.println("Сумма четных элементов над главной диагональю: " + sumEven);
+        System.out.println("Сумма четных элементов над побочной диагональю: " + sumEven);
     }
 }
